@@ -6,6 +6,8 @@ using (HttpClient httpClient = new HttpClient())
     try {
         string resposta = await httpClient.GetStringAsync("https://raw.githubusercontent.com/ArthurOcFernandes/Exerc-cios-C-/curso-4-aula-2/Jsons/Paises.json");
         var paises = JsonSerializer.Deserialize<List<Pais>>(resposta)!;
+        paises[0].ExibirDetalhes();
+        Console.WriteLine(paises.Count);
 
     } catch (Exception ex) 
     {

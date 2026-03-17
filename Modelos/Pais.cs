@@ -16,4 +16,19 @@ internal class Pais
     public string? Continente { get; set; }
     [JsonPropertyName("idioma")]
     public string? Idioma { get; set; }
+
+
+    public void ExibirDetalhes() 
+    {
+        Console.WriteLine("-----------------------------------");
+        Console.WriteLine("CEP System");
+
+        Console.WriteLine($"\nPais: {Nome}");
+        Console.WriteLine($"Capital: {Capital}");
+        Console.WriteLine($"Populacao: {Populacao}");
+        Console.WriteLine($"Continente: {Continente}");
+        Console.WriteLine($"Idioma: {Idioma}");
+
+
+    }
 }

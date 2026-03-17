@@ -28,7 +28,5 @@ internal class Pais
         Console.WriteLine($"Populacao: {Populacao}");
         Console.WriteLine($"Continente: {Continente}");
         Console.WriteLine($"Idioma: {Idioma}");
-
-
     }
 }
